@@ -1,0 +1,26 @@
+/* main.css (optimizado) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
+}
+
+/* Estilos para widgets de terceros */
+.calendly-inline-widget {
+  height: 100% !important;
+  min-height: 500px;
+}
+
+@media (max-width: 1024px) {
+  .calendly-inline-widget {
+    min-height: 700px;
+  }
+}
